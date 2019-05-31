@@ -19,11 +19,14 @@ let result = function test(a, b){
 console.log(result())
 
 // Consider arrays
-let myArray = ['Thomas', 'Noel', 'Faraz']
-let emptyArray = []
-let length = myArray.length
+function arrayAdd(){
+    let myArray = ['Thomas', 'Noel', 'Faraz']
+    let emptyArray = []
+    let length = myArray.length
 
-for (let i=0; i < length; i++){
-    emptyArray[i] = myArray[i]
+    for (let i=0; i < length; i++){
+        emptyArray[i] = myArray[i]
+    }
+    console.log(emptyArray) // Not really empty any more...
+    return(emptyArray)
 }
-console.log(emptyArray) // Not really empty any more...
